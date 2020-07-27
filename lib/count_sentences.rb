@@ -31,8 +31,8 @@ class String
       return 0
     end
     splitSent = self.split(".")
-    splitSentQuest.collect do | text |
-       splitSent.split("?")
+    splitSentQuest = splitSent.collect do | text |
+       text.split("?")
     splitAll = splitSentQuest.split("?")
     return splitAll
   end
