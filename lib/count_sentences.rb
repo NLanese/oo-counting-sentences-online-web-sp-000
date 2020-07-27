@@ -30,6 +30,13 @@ class String
     if !(self.include?(".") || self.include?("?") || self.include?("!"))
       return 0
     end
+    punct = 0
+    self.each do | letter |
+      if (letter == "." || letter == "?" || letter == "!")
+        punct += 1
+      end
+    end
+    return punct
     sentences = self
     if (self.include?("."))
       sentences = self.split(".")
