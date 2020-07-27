@@ -35,7 +35,7 @@ class String
       sentences = self.split(".")
     end
     if (self.include?("?"))
-      sentences = 
+      sentences =
 
     return splitAll
   end
