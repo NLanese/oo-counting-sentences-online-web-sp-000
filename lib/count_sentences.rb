@@ -40,6 +40,6 @@ class String
     if (self.include?("!"))
       sentences = self.split("!")
     end
-    return sentences.length
+    return sentences
   end
 end
