@@ -31,7 +31,8 @@ class String
       return 0
     end
     punct = 0
-    self.each do | letter |
+    newSelf = self.split("")
+    newSelf.each do | letter |
       if (letter == "." || letter == "?" || letter == "!")
         punct += 1
       end
