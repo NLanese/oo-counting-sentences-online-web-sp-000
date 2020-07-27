@@ -30,14 +30,12 @@ class String
     if !(self.include?(".") || self.include?("?") || self.include?("!"))
       return 0
     end
-
-    splitSent = self.split(".")
-    splitSentQuest = splitSent.collect do | text |
-       text.split("?")
-     end
-    splitAll = splitSentQuest.collect do | text |
-      text.split("!")
+    sentences = ""
+    if (self.include?("."))
+      sentences = self.split(".")
     end
+    if (self.include?("?"))
+      sentences = 
 
     return splitAll
   end
