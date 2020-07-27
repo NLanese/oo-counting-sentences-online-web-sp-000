@@ -37,17 +37,7 @@ class String
         punct += 1
       end
     end
-    return punct
-    sentences = self
-    if (self.include?("."))
-      sentences = self.split(".")
-    end
-    if (self.include?("?"))
-      sentences = self.split("?")
-    end
-    if (self.include?("!"))
-      sentences = self.split("!")
-    end
-    return sentences
+    return newSelf
   end
+  
 end
