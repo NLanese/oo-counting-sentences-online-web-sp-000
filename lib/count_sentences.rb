@@ -39,5 +39,5 @@ class String
     end
     return newSelf
   end
-  
+
 end
