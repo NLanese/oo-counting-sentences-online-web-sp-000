@@ -30,7 +30,7 @@ class String
     if !(self.include?(".") || self.include?("?") || self.include?("!"))
       return 0
     end
-    sentences = ""
+    sentences = self
     if (self.include?("."))
       sentences = self.split(".")
     end
