@@ -27,6 +27,9 @@ class String
   end
 
   def count_sentences
+    if !(self.include?(".") || self.include?("?") || self.include?("!"))
+      return 0
+    end
     splitSent = self.split(".")
     splitSentQuest = splitSent.split("?")
     splitAll = splitSentQuest.split("?")
